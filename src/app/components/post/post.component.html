@@ -1,0 +1,13 @@
+<div class="panel panel-primary" style="background:lightgray; border: 1px solid black">
+    <h3 style="margin-top:5px; margin-bottom:5px">
+      <span class="badge badge-pill badge-info" 
+        style="color:blue;background-color:lightgray;font-size:large;">
+        {{inPost.id}}
+      </span>
+      <span class="{{caretDirection}}" (click)="doShow()">
+        <span class="caret" aria-hidden="true"></span>
+        <small class="text-muted" >{{inPost.title}}</small>
+      </span>
+    </h3>
+  <p *ngIf="showIt" style="margin-left: 10px;">{{inPost.body}}</p>
+</div>
